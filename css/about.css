@@ -138,3 +138,9 @@ p {
 .first-list > p{
     color: #EF6351;
 }
+
+.picture > img {
+    width: 25vw;
+    transform: translate(200%, -60%);
+    background-color: transparent;
+}

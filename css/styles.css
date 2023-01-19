@@ -122,3 +122,8 @@ main {
     font-size: 3vh;
     font-weight: lighter;
 }
+
+.picture > img {
+    width: 40vw;
+    transform: translate(0%, 10%);
+}
