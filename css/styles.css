@@ -101,7 +101,7 @@ main {
 
 .name > h1 {
     font-size: 11vh;
-    color: #E8A598;
+    color: #EF6351;
     font-weight: lighter;
 }
 
@@ -112,13 +112,13 @@ main {
 }
 
 .occupation > h3 {
-    color: #FFB5A7;
+    color: #E8A598;
     font-size: 4vh;
     font-weight: lighter;
 }
 
 .occupation > h4 {
-    color:#FFB5A7;
+    color:#E8A598;
     font-size: 3vh;
     font-weight: lighter;
 }
