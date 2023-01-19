@@ -1,20 +1,31 @@
-const modal = document.querySelector(".modal")
-const previews = document.querySelectorAll(".image-container")
-const original = document.querySelector(".modal-img")
-const imgText = document.querySelector(".caption")
 
-previews.forEach(preview => {
-    preview.addEventListener("click", () => {
-        modal.classList.add("open")
-        original.classList.add("open")
-    })
-})
+//==========PORTFOLIO==========
+let slideIndex = 1;
+showSlides(slideIndex)
 
-modal.addEventListener("click", (e) => {
-    if(e.target.classList.contains("modal")){
-        modal.classList.remove("open")
-        original.classList.remove("open")
-    }
-})
+function plusSlides(n) {
+  showSlides(slideIndex += n)
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n)
+}
+
+function showSlides(n) {
+  let i
+  let slides = document.getElementsByClassName("mySlides")
+  let dots = document.getElementsByClassName("dot")
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none" 
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "")
+  }
+  slides[slideIndex-1].style.display = "block"  
+  dots[slideIndex-1].className += " active"
+}
+
 
 

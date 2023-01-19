@@ -5,22 +5,34 @@
     font-family: 'IM Fell Great Primer', serif;
 }
 
-.container {
+body {
     display: flex;
-    align-items: center;
-    gap: 3rem;
+    gap: 5rem;
+    
 }
 
 .sidebar {
     width: fit-content;
-    height:100vh;
+    height: 100vh;
     background-color: #E8A598;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
     position: sticky;
+    top: 0;
 }
+
+
+.logo{
+    background-color: transparent;
+    padding: 20px;
+}
+
+.logo > img {
+    background-color: transparent;
+}
+
 
 .nav {
     width: 100%;
@@ -28,8 +40,8 @@
     flex-direction: column;
     align-items: center;
     background-color: #E8A598;
-    width: 100%;
 }
+
 
 .nav-links {
     text-decoration: none;
@@ -39,47 +51,61 @@
     padding: 1vh;
 }
 
+.nav-links:hover{
+    background-color: #F8EDEB;
+    color: #E8A598;
+    width: 100%;
+}
+
 .line {
-    border: 1px solid #F6FFF8;
+    border: 1px solid #FAEFE8;
     width: 100%;
 }
 
 
 .socials {
-   width: 100%;
-   background-color: #E8A598;
-   transform: translate(0%, -500%);
-   display: flex;
-   justify-content: space-evenly;
-} 
+    width: 100%;
+    background-color: transparent;
+    transform: translate(0%, -200%);
+    display: flex;
+    justify-content: space-evenly;
 
-.socials > a {
-    background-color: #E8A598;
-    text-decoration: none;
 }
 
-.desc-container {
-    margin-top: -15rem;
+.socials > a {
+    background-color: transparent;
+}
+
+.social-icons {
+    width: 6rem;
+    background-color: transparent;
+}
+
+.social-icons:hover{
+    opacity: 0.5;
+}
+
+main {
     display: flex;
     flex-direction: column;
     gap: 3rem;
+    width: 70%;
 }
 
-.title > h1 {
+.title>h1 {
     font-size: 11vh;
     color: #E8A598;
     font-weight: lighter;
-}
-
-.desc {
-    width: 40%;
-    display: flex;
-    flex-direction: row;
-    gap: 2rem;
 }
 
 p {
     display: block;
     color: #613026;
     font-size: 2vh;
+}
+
+.sidebar > p {
+    width: 55%;
+    background-color: transparent;
+    text-align: center;
 }

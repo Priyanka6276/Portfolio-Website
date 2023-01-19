@@ -14,72 +14,89 @@
 </head>
 
 <body>
-    <div class="container">
-        <div class="sidebar">
-            <div class="logo">
-                <img src="https://static.wikia.nocookie.net/masseffect/images/5/58/N7_Logo.png" alt="logo">
-            </div>
-            <nav class="nav">
-                <div class="line"></div>
-                <a href="./about.html" class="nav-links">
-                    About
-                </a>
-                <div class="line"></div>
-                <a href="./portfolio.html" class="nav-links">
-                    Portfolio
-                </a>
-                <div class="line"></div>
-                <a href="./skills.html" class="nav-links">
-                    Skills
-                </a>
-                <div class="line"></div>
-            </nav>
-            <div class="socials">
-                <a href="https://www.linkedin.com/in/priyanka-chanbrasegaran/">in</a>
-                <a href="https://github.com/Priyanka6276">git</a>
-            </div>
+    <div class="sidebar">
+        <div class="logo">
+            <img src="../images/logo.png" style="width: 15rem;" alt="logo">
         </div>
-        <div class="main">
-            <div class="desc-container">
-                <div class="title">
-                    <h1>Portfolio</h1>
-                </div>
-                <div class="desc">
-                    <div class="project">
-                        <div class="image-container">
-                            <div class="middle">
-                                <button class="text" onclick="imgOnClick()">Learn More</button>
-                            </div>
-                            <div class="image">
-                                <img src="https://images.pexels.com/photos/1629781/pexels-photo-1629781.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-                                    alt="">
-                            </div>
-                        </div>
-                        <h3>Text Adventure Game</h3>
-                        <p>Made with pure Javascript, HTML, CSS</p>
-                    </div>
-                    <div class="project">
-                        <div class="image-container">
-                            <div class="middle">
-                                <button class="text">Learn More</button>
-                            </div>
-                            <div class="image">
-                                <img src="https://images.pexels.com/photos/1564506/pexels-photo-1564506.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-                                    alt="">
-                            </div>
-                        </div>
-                        <h3>Foreign Language Productivity App</h3>
-                        <p>Made using the MERN Stack</p>
-                    </div>
-                </div>
-                <div class="modal">
-                    <img src="https://images.pexels.com/photos/1564506/pexels-photo-1564506.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="" class="modal-img">
-                    <p class="caption">dun dun dun</p>
-                </div>
-            </div>
+        <nav class="nav">
+            <div class="line"></div>
+            <a href="./about.html" class="nav-links">
+                About
+            </a>
+            <div class="line"></div>
+            <a href="./portfolio.html" class="nav-links">
+                Portfolio
+            </a>
+            <div class="line"></div>
+            <a href="../images/Priyanka-Chanbrasegaran-Resume.pdf" class="nav-links" target="_blank">
+                Resume
+            </a>
+            <div class="line"></div>
+        </nav>
+        <div class="socials">
+            <a href="https://www.linkedin.com/in/priyanka-chanbrasegaran/" target="_blank"><img src="../images/linkedin.png" alt="" class="social-icons"></a>
+            <a href="https://github.com/Priyanka6276" target="_blank"><img src="../images/github.png" alt="" class="social-icons"></a>
         </div>
     </div>
+    <main>
+        <div class="title">
+            <h1>Portfolio</h1>
+        </div>
+        <div class="desc">
+            <div class="project">
+                <a href="./text-adventure.html">
+                    <div class="image-container">
+                        <div class="middle">
+                            <button type="button" class="text">Learn More</button>
+                        </div>
+                        <div class="image">
+                            <img src="../images/game-start.png" alt="text adventure project">
+                        </div>
+                    </div>
+                </a>
+                <div class="description">
+                    <h3>Text Adventure Game</h3>
+                    <p>Made entirely with Javascript</p>
+                </div>
+            </div>
+            <div class="project">
+                <div class="description">
+                    <h3>Foreign Language Productivity App</h3>
+                    <p>Made using the MERN Stack</p>
+                </div>
+                <a href="./language-app.html">
+                    <div class="image-container">
+                        <div class="middle">
+                            <button type="button" class="text">Learn More</button>
+                        </div>
+                        <div class="image">
+                            <img src="../images/lang-dash.png" alt="">
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="project">
+                <a href="./space-fighter.html">
+                    <div class="image-container">
+                        <div class="middle">
+                            <button type="button" class="text">Learn More</button>
+                        </div>
+                        <div class="image">
+                            <img src="../images/space-fighter.jpg" alt="space fighter project">
+                        </div>
+                    </div>
+                </a>
+                <div class="description">
+                    <h3>Space Fighter Game</h3>
+                    <p>Made entirely with Javascript</p>
+                </div>
+            </div>
 
+        </div>
+        <footer>
+            <p>Designed and Built by Priyanka Chanbrasegaran</p>
+        </footer>
+    </main>
 </body>
 
 </html>
